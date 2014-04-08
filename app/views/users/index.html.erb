@@ -1,3 +1,8 @@
+<%= form_tag users_path, method: :get do %>
+  <%= text_field_tag :q, params[:q], placeholder: 'Search for a name' %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
 <h1>Listing users</h1>
 
 <table>
